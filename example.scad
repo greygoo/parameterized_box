@@ -63,5 +63,6 @@ OPENINGS = [[[10,WALL,4],[0,0,0],0],
 
 include <parameterized_box.scad>
 
+// choose what to render. The entry without "*" is rendered.
 case_top();
 *case_bottom();
