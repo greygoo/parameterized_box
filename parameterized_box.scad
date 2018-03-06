@@ -161,7 +161,7 @@ module create_openings(OPENINGS){
         if (POSITION == 0) {
             X_ZERO_LOC  = - (OBJECT[0]/2 - DIMENSION[0]/2);
             Y_ZERO_LOC  = - (OBJECT_BOX[1]/2 - DIMENSION[1]/2);
-            Z_ZERO_LOC  = - (OBJECT[2]/2 - DIMENSION[2]/2);
+            Z_ZERO_LOC  = - (OBJECT[2]/2 - DIMENSION[2]/2) + MNT_HEIGHT;
             ROTATION    = [0,0,0];
             
             draw_opening(X_ZERO_LOC, Y_ZERO_LOC, Z_ZERO_LOC, DIMENSION, LOCATION, ROTATION);
@@ -171,7 +171,7 @@ module create_openings(OPENINGS){
         if (POSITION == 1) {
             X_ZERO_LOC  = - (OBJECT[0]/2 - DIMENSION[0]/2);
             Y_ZERO_LOC  = (OBJECT_BOX[1]/2 - DIMENSION[1]/2);
-            Z_ZERO_LOC  = - (OBJECT[2]/2 - DIMENSION[2]/2);
+            Z_ZERO_LOC  = - (OBJECT[2]/2 - DIMENSION[2]/2) + MNT_HEIGHT;
             ROTATION    = [0,0,180];
             
             draw_opening(X_ZERO_LOC, Y_ZERO_LOC, Z_ZERO_LOC, DIMENSION, LOCATION, ROTATION);
@@ -181,7 +181,7 @@ module create_openings(OPENINGS){
         if (POSITION == 2) {
             X_ZERO_LOC  = - (OBJECT_BOX[0]/2 - DIMENSION[1]/2);
             Y_ZERO_LOC  = - (OBJECT[1]/2 - DIMENSION[0]/2);
-            Z_ZERO_LOC  = - (OBJECT[2]/2 - DIMENSION[2]/2);
+            Z_ZERO_LOC  = - (OBJECT[2]/2 - DIMENSION[2]/2) + MNT_HEIGHT;
             ROTATION    = [180,0,90];
             
             draw_opening(X_ZERO_LOC, Y_ZERO_LOC, Z_ZERO_LOC, DIMENSION, LOCATION, ROTATION);
@@ -191,7 +191,7 @@ module create_openings(OPENINGS){
         if (POSITION == 3) {
             X_ZERO_LOC  = (OBJECT_BOX[0]/2 - DIMENSION[1]/2);
             Y_ZERO_LOC  = - (OBJECT[1]/2 - DIMENSION[0]/2);
-            Z_ZERO_LOC  = - (OBJECT[2]/2 - DIMENSION[2]/2);
+            Z_ZERO_LOC  = - (OBJECT[2]/2 - DIMENSION[2]/2) + MNT_HEIGHT;
             ROTATION    = [0,0,90];
             
             draw_opening(X_ZERO_LOC, Y_ZERO_LOC, Z_ZERO_LOC, DIMENSION, LOCATION, ROTATION);
