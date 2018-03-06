@@ -48,21 +48,20 @@ WALL:       the wall the opening is moved to:
 
 */
 
-/*OPENINGS = [[[10,WALL,4],[0,0,0],0],
+OPENINGS = [[[10,WALL,4],[0,0,0],0],
             [[10,WALL,4],[0,0,0],1],
             [[10,WALL,4],[0,0,0],2],
             [[10,WALL,4],[0,0,0],3],
             [[10,WALL,4],[0,0,0],4],
             [[10,WALL,4],[0,0,0],5]
-           ];
-*/           
+           ];          
 
 
-OPENINGS = [[[10,WALL,4],[0,0,0],0],
+/*OPENINGS = [[[10,WALL,4],[0,0,0],0],
             [[10,WALL,4],[0,0,0],1]
-           ];
+           ];*/
 
 include <parameterized_box.scad>
 
-*case_top();
-case_bottom();
+case_top();
+*case_bottom();
